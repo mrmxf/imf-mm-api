@@ -85,7 +85,7 @@
     "jshint": "^2.11.0",
     "jshint-stylish": "^2.2.1",
     "koa-openapi": "^4.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "pino-pretty": "^3.6.1",
     "supertest": "^3.4.2"
   }
