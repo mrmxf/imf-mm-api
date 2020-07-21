@@ -77,12 +77,12 @@
     "gulp-jshint": "^2.1.0",
     "gulp-lambda-deploy": "^0.3.0",
     "gulp-zip": "^4.2.0",
-    "jest": "^24.9.0",
-    "jest-html-reporter": "^2.4.1",
+    "jest": "^26.1.0",
+    "jest-html-reporter": "^3.1.3",
     "jshint": "^2.10.2",
     "jshint-stylish": "^2.2.1",
     "koa-openapi": "^3.13.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "pino-pretty": "^3.2.1",
     "supertest": "^3.4.2"
   }
