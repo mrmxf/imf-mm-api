@@ -1,12 +1,16 @@
 openapi: 3.0.2
 info:
   title: IMF Asset Registration API
-  version: '0.3b'
+  version: "0.5"
 security:
-  - type:
-      - http
+  - type: [ http ]
 servers:
-  - url: /
+  - url: https://imf-mm-api.cloud/demo/1
+    description: 'Public version of API from Mr MXF hosted by Amazon Elemental'
+  - url: https://imf-mm-api.cloud/demo/staging
+    description: 'Testing release candidate from Mr MXF hosted by Amazon Elemental'
+  - url: https://imf-mm-api.cloud/demo/staging
+    description: 'Next release candidate from Mr MXF hosted by Amazon Elemental'
 paths:
   /assets:
     post:
@@ -19,7 +23,6 @@ paths:
 
         At least one identifier provided must be a digest type (e.g.
         urn:sha1:...,  urn:c4id:...) that uniquely identifies the asset. 
-
 
         Systems may require a specific identifier type to act as a primery id. 
         Pakanu requires 'x-short-digest:' type for every POST interaction.
@@ -106,6 +109,26 @@ paths:
                 failed</status_label></response_message>
               schema:
                 $ref: '#/components/schemas/responseMessage'
+        '415':
+          description: >
+            Unsupported Media Type. Parsing or other error during validation
+            of supplied registration data. 
+          content:
+            application/json:
+              example:
+                message: Unsupported Media Type
+                status: 415
+                status_label: Unsupported Media Type
+              schema:
+                $ref: '#/components/schemas/responseMessage'
+            application/xml:
+              example: >-
+                <?xml version="1.0"encoding="UTF-8"?>
+                <response_message><message>Unsupported Media Type</message>
+                <status>415</status>
+                <status_label>Unsupported Media Type</status_label></response_message>
+              schema:
+                $ref: '#/components/schemas/responseMessage'
     get:
       tags:
         - Asset Registration API
@@ -155,8 +178,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/assetInfoSchema'
           headers:
-            ETag:
-              description: Entity Tag
+            etag:
+              description: >-
+                Entity Tag. This is any unique value that changes when the
+                record is updated in the database. It is required for PUT
+                operations to prevent race conditions when updating data.
               schema:
                 type: string
         '300':
@@ -200,7 +226,7 @@ paths:
         '404':
           description: Asset registration entry not found.
         '412':
-          description: Precondition failed. ETag did not match for update.
+          description: Precondition failed. etag did not match for update.
         '428':
           description: Precondition required. Expecting If-Match header.
     delete:
@@ -244,7 +270,7 @@ components:
       schema:
         $ref: '#/components/schemas/identifierSchema'
     etag:
-      name: ETag
+      name: etag
       description: Entity Tag
       in: header
       schema:
@@ -253,7 +279,7 @@ components:
       name: If-Match
       description: >-
         Used for conditional update of initial asset registration entry. Value
-        should be set to ETag header value of get request.
+        should be set to etag header value of get request.
       required: true
       in: header
       schema:
@@ -394,6 +420,11 @@ components:
           xml:
             name: identifiers
             wrapped: true
+        locationProviderId:
+          type: array
+          items:
+            type: string
+            description: 'A unique string to identify the MAM or source of the locations'
         locations:
           type: array
           items:

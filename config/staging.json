@@ -1,5 +1,12 @@
 {
     "annotation": "Staging Configuration",
     "port": 3002,
-    "api_prefix": "staging"
+    "api_prefix": "staging",
+    "database": {
+        "type": "local"
+    },
+    "log_options": {
+        "level": "warn",
+        "log_api_access": true
+    }
 }

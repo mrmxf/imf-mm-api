@@ -1,9 +1,11 @@
+/** DEPRECATED - to be incorporated into crawl */
 /* jshint node: true */
 'use strict'
 const config = require('config')
 const log = require('pino')(config.get('log_options'))
 const u = require('./lib/util')
 const rJ = u.left_pad_for_logging
+const _module = require('path').basename(__filename)
 
 const Router = require('koa-router');
 const router = Router({
@@ -52,6 +54,6 @@ const scan_s3_bucket = async function (ctx, next) {
 router.use('/', not_implemented)
 router.get('/s3', scan_s3_bucket)
 
-log.info(`${rJ('module:')} scan s3 initialised`)
+log.info(`${rJ('module: ')}scan s3 initialised`)
 
 module.exports = router;
