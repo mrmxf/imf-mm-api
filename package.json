@@ -70,7 +70,8 @@
     "pino-tee": "^0.2.2",
     "serverless-http": "^2.7.0",
     "simpledb": "^0.2.0",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.4.23",
+    "y18n": ">=3.2.2"
   },
   "devDependencies": {
     "chalk": "^3.0.0",
