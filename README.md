@@ -1,35 +1,45 @@
 # imf-mm-api
 
-A node server to implement the IMF Media Management API with a choice of databases
+| **UPDATE 2022-04-14** |
+|--------------------   |
+| Refactoring in progress to address vulnerabilities!!! There may be some quirky behaviour |
 
-The default behaviour is to provide a simple app that will scan one or more folders for IMF
-assets, build a database of those assets and then serve the locations of those assets based
-on the IDs or hash values found. New assets can be registered using the API.
+A node server to implement SMTPE ST 2125 IMF Registration API with a choice of
+databases
 
-The app is controlled via your system's default browser and has been tested with Chrome, Chromium
-Firefox and Edge on Windows & Linux. The cloud deployment is available at [imf-mm-api.cloud](https://imf-mm-api.cloud).
+The default behaviour is to provide a simple app that will scan one or more
+folders for IMF assets, build a database of those assets and then serve the
+locations of those assets based on the IDs or hash values found. New assets can
+be registered using the API.
 
-You can modify the behaviour by changing the config (see below). This will allow you to disable certain
-funcitons or to mount the application on a server somethwere other than the root of the domain.
+The app is controlled via your system's default browser and has been tested with
+Chrome, Chromium Firefox and Edge on Windows & Linux. An online deployment is
+available at [mrmxf.io](https://mrmxf.io).
 
-This app is meant to demonstrate the API functionality. The backend is not intended for production.
-Contact [Mr MXF](https://mrmxf.com) if you need something more robust.
+You can modify behaviour by changing the config (see below). This will allow you
+to disable certain funcitons or to mount the application on a server somewhere
+other than the root of the domain.
+
+This app is meant to demonstrate the API functionality. The backend is not
+intended for production. Contact [Mr MXF](https://mrmxf.com) if you need
+something more robust.
 
 ## installation
 
 ### to just run the code
 
-* install node 8.10 or above
+* install node 16 or above
 * clone (or download and unzip) the repository into a folder
 * `cd` into that folder
 * install dependencies `npm install --production`
 * fix any security issues `npm audit fix`
 * dedupe modules `npm dedupe`
-* create a `.env` file with how you want to run the code and credentials for AWS  if you
-  are going to use AWS SimpleDB as your database
+* create a `.env` file with how you want to run the code and credentials for AWS
+  if you are going to use AWS SimpleDB as your database
 
 ```bash
-# run time environment variables for imf-mm-api (you can safely copy this to a .env file)
+# run time environment variables for imf-mm-api 
+# (you can safely copy this to a .env file)
 #
 # what mode are we in? Uncomment one of these
 #NODE_ENV=test
@@ -72,19 +82,6 @@ export GIT_URL
 * tun the test suite with `npm test` to verify everything is working on your environment
 * create new tests in the `__test__` folder for your new components (there are examples for synchronous, asynchronous and API response tests)
 * update the `jest` section of `package.json` to specify which tests to run and how to view the results
-
-### to modify the code to run in AWS Lambda
-
-This is currently not working, so these are the right instructions but the repository won't run
-properly until a few bugs are ironed out. Probably August 2019 for that update.
-
-* install serverless framework globally `npm install --global serverless`
-* [possibly make](https://serverless.com/framework/docs/providers/aws/guide/credentials/#aws---credentials)
-  and configure [aws credentials](https://serverless.com/framework/docs/providers/aws/cli-reference/config-credentials/)
-* update [serverless.yml](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
-* Execution
-  * local: configure `/.vscode/runtime.env` to set `NODE_ENV`
-  * lambda: edit `serverless.yml` to set `NODE_ENV` for the cloudformation deployed app
 
 ### to build and run Docker image
 

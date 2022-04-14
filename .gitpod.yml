@@ -1,0 +1,24 @@
+# Gitpod configuration for imf-reg-api
+# .bashrc is reset every time the workspace is stopped so reset it on launch
+
+tasks:
+  - name:    imf-reg-api environment
+    before:  clogrc/gitpod/before-tasks.sh
+    init:    clogrc/gitpod/init-tasks.sh
+    command: clogrc/gitpod/startup-tasks.sh
+
+# Ports to expose on workspace startup
+ports:
+  - port: 3000
+    onOpen: open-browser
+  - port: 3001
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - piersdeseilligny.betterfountain
+    - stkb.rewrap
+    - ms-toolsai.jupyter
+    - mads-hartmann.bash-ide-vscode
+    - DotJoshJohnson.xml

@@ -1,16 +1,15 @@
+# The OpenAPI version of ST 2125 imf registration api
 openapi: 3.0.2
 info:
-  title: IMF Asset Registration API
-  version: "0.5"
+  title: IMF Registration API
+  version: "0.6"
 security:
   - type: [ http ]
 servers:
-  - url: https://imf-mm-api.cloud/demo/1
-    description: 'Public version of API from Mr MXF hosted by Amazon Elemental'
-  - url: https://imf-mm-api.cloud/demo/staging
-    description: 'Testing release candidate from Mr MXF hosted by Amazon Elemental'
-  - url: https://imf-mm-api.cloud/demo/staging
-    description: 'Next release candidate from Mr MXF hosted by Amazon Elemental'
+  - url: https://mrmxf.io/imf-reg-api/1
+    description: 'Public version of API from Mr MXF'
+  - url: https://staging.mrmxf.io/imf-reg-api/1
+    description: 'Testing release candidate from Mr MXF'
 paths:
   /assets:
     post:

@@ -27,23 +27,30 @@ if (config.get('log_options').log_api_access) {
 //load the body parser
 server.use(bodyParser())
 
-if (config.get('enable.www')) {
-    let www = require('koa-static')
-    server.use(mount(config.get('mount_point'), www('docs/www/', {})))
-}
+let prefix = config.get('mount_point')
+
 if (config.get('enable.admin')) {
     let api = require('./api-admin.js')
-    server.use(mount(config.get('mount_point'), api.routes()))
-}
-if (config.get('enable.assets')) {
-    let api = require('./api-assets.js')
-    server.use(mount(config.get('mount_point'), api.routes()))
-}
-if (config.get('enable.crawl')) {
-    let api = require('./api-crawl-fs.js')
-    server.use(mount(config.get('mount_point'), api.routes()))
+    server.use(mount(prefix, api.routes()))
 }
 
+if (config.get('enable.assets')) {
+    let api = require('./api-assets.js')
+    server.use(mount(prefix, api.routes()))
+}
+
+if (config.get('enable.crawl')) {
+    let api = require('./api-crawl-fs.js')
+    server.use(mount(prefix, api.routes()))
+}
+
+//if the route has not been handled then try a static response
+if (config.get('enable.www')) {
+    let www = require('koa-static')
+    server.use(mount(prefix, www('docs/www/', {})))
+}
+
+// initialise the database
 server.mm_init = async (resolve) => {
     db.init()
 }

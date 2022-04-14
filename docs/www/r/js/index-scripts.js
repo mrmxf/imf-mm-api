@@ -5,5 +5,5 @@ const init_page = async() => {
     let markdown = document.getElementById('markdown-rendered-to-html-then-hidden-on-page-load')
     let html_out = document.getElementById('replaced-with-html-on-page-load')
     markdown.setAttribute('style', 'display:none;')
-    html_out.innerHTML = marked(markdown.innerText) + '<h1>README.md</h1>' + marked(demo.readme)
+    html_out.innerHTML = marked.parse(markdown.innerText) + '<h1>README.md</h1>' + marked.parse(demo.readme)
 }

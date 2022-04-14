@@ -1,0 +1,15 @@
+#                                    _        
+#  ___    __ _   _ __ ___    _ __   | |   ___ 
+# / __|  / _` | | '_ ` _ \  | '_ \  | |  / _ \
+# \__ \ | (_| | | | | | | | | |_) | | | |  __/
+# |___/  \__,_| |_| |_| |_| | .__/  |_|  \___|
+#                           |_|               
+# clog configuration - generic
+bind:
+  - "AWS_ACCESS_KEY_ID"
+  - "AWS_SECRET_ACCESS_KEY"
+clogrcFolder: clogrc
+folder:
+  resource: r
+  clogrc:   ./clogrc
+version: "0.2"

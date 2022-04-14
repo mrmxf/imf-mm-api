@@ -6,10 +6,10 @@
       "urn:uuid:b3bac52a-459b-4075-b2ab-2da51915c76b"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\noise\\test03-imf-mm-api-wnoise\\ASSETMAP.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/noise/test03-imf-mm-api-wnoise/ASSETMAP.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -31,10 +31,10 @@
       "urn:sha1:44e4c5776622426278bd99e131be956636f571a8"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\noise\\test03-imf-mm-api-wnoise\\CPL_6396792b-6d65-45d5-aa0f-a59f1472338e.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/noise/test03-imf-mm-api-wnoise/CPL_6396792b-6d65-45d5-aa0f-a59f1472338e.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -55,10 +55,10 @@
       "urn:uuid:04085391-05d6-47c5-8dc3-ca7aefa79aa1"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\noise\\test03-imf-mm-api-wnoise\\PKL_04085391-05d6-47c5-8dc3-ca7aefa79aa1.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/noise/test03-imf-mm-api-wnoise/PKL_04085391-05d6-47c5-8dc3-ca7aefa79aa1.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -80,10 +80,10 @@
       "urn:sha1:301eb98df258502fb1b39c4208bcf51512a3a808"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\noise\\test03-imf-mm-api-wnoise\\test03-imf-mm-api-wnoise_a0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/noise/test03-imf-mm-api-wnoise/test03-imf-mm-api-wnoise_a0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -105,10 +105,10 @@
       "urn:sha1:04433b433e28798e02c85e251bedc40eab6e59df"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\noise\\test03-imf-mm-api-wnoise\\test03-imf-mm-api-wnoise_v0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/noise/test03-imf-mm-api-wnoise/test03-imf-mm-api-wnoise_v0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -129,10 +129,10 @@
       "urn:uuid:f0fcc3c8-79d5-4a9c-a1ba-250e2738825b"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test00-imf-mm-api-0500Hz\\ASSETMAP.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test00-imf-mm-api-0500Hz/ASSETMAP.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -154,10 +154,10 @@
       "urn:sha1:a59f110dbed987eb86b6169e27867745806db4ad"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test00-imf-mm-api-0500Hz\\CPL_32e351c6-bf02-4b35-b4eb-36a283caf989.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test00-imf-mm-api-0500Hz/CPL_32e351c6-bf02-4b35-b4eb-36a283caf989.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -178,10 +178,10 @@
       "urn:uuid:8db0c988-a129-4654-a95e-c07321148d8d"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test00-imf-mm-api-0500Hz\\PKL_8db0c988-a129-4654-a95e-c07321148d8d.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test00-imf-mm-api-0500Hz/PKL_8db0c988-a129-4654-a95e-c07321148d8d.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -203,10 +203,10 @@
       "urn:sha1:166cd8e1fd309d9b33e4a3e52f86019a54141576"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test00-imf-mm-api-0500Hz\\test00-imf-mm-api-0500Hz_a0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test00-imf-mm-api-0500Hz/test00-imf-mm-api-0500Hz_a0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -228,10 +228,10 @@
       "urn:sha1:ef2fbafebdbc82117bab4f3ae5fb3c06f33430ca"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test00-imf-mm-api-0500Hz\\test00-imf-mm-api-0500Hz_v0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test00-imf-mm-api-0500Hz/test00-imf-mm-api-0500Hz_v0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -252,10 +252,10 @@
       "urn:uuid:f5a782d8-08c9-461b-a266-37ccbcd4cd47"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test01-imf-mm-api-1000Hz\\ASSETMAP.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test01-imf-mm-api-1000Hz/ASSETMAP.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -277,10 +277,10 @@
       "urn:sha1:c75fe60f16a05f58abb0cb4546d6608fe194002e"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test01-imf-mm-api-1000Hz\\CPL_8e0d6eec-1e41-49b8-92e1-db000f63d743.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test01-imf-mm-api-1000Hz/CPL_8e0d6eec-1e41-49b8-92e1-db000f63d743.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -301,10 +301,10 @@
       "urn:uuid:dcceeba7-4860-4020-bc05-594a27e4472f"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test01-imf-mm-api-1000Hz\\PKL_dcceeba7-4860-4020-bc05-594a27e4472f.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test01-imf-mm-api-1000Hz/PKL_dcceeba7-4860-4020-bc05-594a27e4472f.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -326,10 +326,10 @@
       "urn:sha1:087b83dc174700537b9692fc56eeee2b5be5fc43"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test01-imf-mm-api-1000Hz\\test01-imf-mm-api-1000Hz_a0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test01-imf-mm-api-1000Hz/test01-imf-mm-api-1000Hz_a0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -351,10 +351,10 @@
       "urn:sha1:4ffd782ddb5927361bcf58bec96b75d8f4473808"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test01-imf-mm-api-1000Hz\\test01-imf-mm-api-1000Hz_v0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test01-imf-mm-api-1000Hz/test01-imf-mm-api-1000Hz_v0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -375,10 +375,10 @@
       "urn:uuid:9c264810-48f6-4d2f-a8ae-4cba2c22e4bc"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test02-imf-mm-api-2000Hz\\ASSETMAP.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test02-imf-mm-api-2000Hz/ASSETMAP.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -400,10 +400,10 @@
       "urn:sha1:9ff0af71c888baefc8da63955d6044e794362528"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test02-imf-mm-api-2000Hz\\CPL_7da8c0b7-1078-494d-be68-f54639c61662.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test02-imf-mm-api-2000Hz/CPL_7da8c0b7-1078-494d-be68-f54639c61662.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -424,10 +424,10 @@
       "urn:uuid:450c4465-2013-4304-9df6-5a59a4001486"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test02-imf-mm-api-2000Hz\\PKL_450c4465-2013-4304-9df6-5a59a4001486.xml"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test02-imf-mm-api-2000Hz/PKL_450c4465-2013-4304-9df6-5a59a4001486.xml"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -449,10 +449,10 @@
       "urn:sha1:c43e25b4c414915273a39ed9835dcd350b3b14fb"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test02-imf-mm-api-2000Hz\\test02-imf-mm-api-2000Hz_a0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test02-imf-mm-api-2000Hz/test02-imf-mm-api-2000Hz_a0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
@@ -474,10 +474,10 @@
       "urn:sha1:5c92d6f170e4a14adf301af57092cae11e3378d8"
     ],
     "locations": [
-      "d:\\github\\imf-mm-api\\__test__\\assets-imf\\tones\\test02-imf-mm-api-2000Hz\\test02-imf-mm-api-2000Hz_v0.mxf"
+      "/workspace/imf-mm-api/__test__/assets-imf/tones/test02-imf-mm-api-2000Hz/test02-imf-mm-api-2000Hz_v0.mxf"
     ],
     "providers": [
-      "imf-mm-api Demo App"
+      "imf-reg-api-demo"
     ],
     "user": {
       "id": "usr-10000001",
