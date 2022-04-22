@@ -1,5 +1,10 @@
 # Gitpod configuration for imf-reg-api
 # .bashrc is reset every time the workspace is stopped so reset it on launch
+#   _            __                                                _
+#  (_)  _ __    / _|  ___   _ _   ___   __ _   ___   __ _   _ __  (_)
+#  | | | '  \  |  _| |___| | '_| / -_) / _` | |___| / _` | | '_ \ | |
+#  |_| |_|_|_| |_|         |_|   \___| \__, |       \__,_| | .__/ |_|
+#                                      |___/               |_|
 
 tasks:
   - name:    imf-reg-api environment
